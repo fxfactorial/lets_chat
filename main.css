@@ -1,0 +1,40 @@
+* { margin:0; padding:0;}
+
+
+#users_online {
+    background-color:red;
+    width:200px;
+    border-width:2px;
+    border-style:double;
+    height:570px;
+    float:left;
+}
+
+ul {
+    display:flex;
+    list-style-type:none;
+}
+
+#chatroom {
+    display:flex;
+    /* background-color:blue; */
+    margin-left:10px;
+    border-width:2px;
+    margin-right:1px;
+    border-style:double;
+    height:570px;
+    flex-grow:1;
+}
+
+ul {
+    align-self:flex-end;
+}
+
+#chat_input {
+    position:relative;
+    bottom:0;
+    height:30px;
+    width:100%;
+    font-size:xx-large;
+    align-self:flex-end;
+}

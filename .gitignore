@@ -1,0 +1,11 @@
+.tern-port
+fruitbat.cmi
+fruitbat.cmo
+fruitbat.cmt
+fruitbat.js
+node_modules
+bower_components/
+fruitbat_render.js
+client/css/
+chat.js
+chat_ui.js

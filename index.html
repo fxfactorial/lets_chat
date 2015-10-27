@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Let's Chat</title>
+
+		<script src="socket.io.js"></script>
+
+		<link rel="stylesheet" media="all" href="main.css"/>
+		
+	</head>
+	<body>
+
+		<div style="display:flex; padding:3px;">
+		<div id="users_online">
+			
+		</div>
+		
+		<div id="chatroom">
+			<div id="chat_window"> </div>
+			<ul>
+				<li >
+					<input id="chat_input" type="text">
+				</li>
+			</ul>
+		</div>
+		
+		</div>
+	</body>
+
+	<script type="text/javascript">
+	var socketio = io.connect("http://45.33.64.41:8080");
+	socketio.on("message_to_client", function(data) {
+					
+					document.getElementById("chat_window").innerHTML =
+					("<hr/>" + data['message'] +
+									document.getElementById("chat_window").innerHTML);
+	});
+	</script>		
+	
+	<script type="text/javascript" src="chat_ui.js"></script>
+</html>

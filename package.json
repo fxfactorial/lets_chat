@@ -1,0 +1,8 @@
+{
+    "name": "lets_chat",
+    "version": "0.1",
+    "main": "chat.js",
+    "devDependencies": {
+	"electron-prebuilt": "^0.33.7"
+    }
+}
